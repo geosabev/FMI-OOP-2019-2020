@@ -1,0 +1,47 @@
+CHANGELOG:
+
+Homework 3 -> Homework 4
+** Replaced custom MyString and MyVector with std string and vector
+** Removed enum class Category
+** Removed name and description field for Product
+** Added method specifications() for customized Product description
+** Added new Product fields - brand, model and warranty
+** Added new method fullName() for Products
+** Deleted Account and Product default constructors
+** Started using Polymorphism by Products
+** Added new classes inheriting Product - Computer, Desktop, Laptop, Smartphone, Peripheral, Mouse and Keyboard
+** Added method clone() to allocate new memory when Products are being added to the Shop
+** Added "rule of three" in Shop because of new-allocated memory using clone() method
+** Added method total() in ShoppingCart to keep track of total sum of products in cart
+** Removed some cout/return-validation in methods like add, delete, etc. and put exceptions instead in Shop
+** Removed addProduct(MyString n, Category c, double p, MyString nfo) method in Shop
+** Minor changes in most methods
+
+Homework 2 -> Homework 3
+** Replaced dynamic arrays with custom class MyVector
+** Replaced char* with custom class MyString
+** Switched to Initializer List in constructors
+** Added new constructor for Shop (one argument only: MyVector<Products>)
+** Removed copy constructor, copy assignment operator and destructor for Account, Product, ShoppingCart and Shop
+** Fixed code repetition in methods/functions with multiple signatures
+** Fixed excessive use of getters (in loops, etc.)
+** Made some public methods private for better Encapsulation
+** Better validation added for most methods
+** Major changes in most methods
+** class User -> class Account
+** Added headline(MyString) and bottomLine(MyString) in Utility
+
+Homework 1 -> Homework 2
+** Switched to dynamic memory (Shopping Cart)
+** Replaced setters (using dynamic memory) in constructors with "direct" procedures to prevent memory leak
+** Fixed unnoticed memory leaks
+** Added method getAmount() for amount of items in Cart
+** Added method clear() for immediate removal of all items in Cart
+** Added method empty() for current status of Cart
+** Added canRegister() for accounts to prevent duplication (Shop)
+** Added canAddToCatalogue() for products to prevent duplication (Shop)
+** Restructured methods that add/remove/copy objects ("infinite" setters -> operator=)
+** Fixed method remove() for removing items from Cart (when given a negative position)
+** Some validation added for most methods
+** Minor changes in most methods (messages, validation, etc.)
+** MoreStuff.h and MoreStuff.cpp -> Utility.h and Utility.cpp
